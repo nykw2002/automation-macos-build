@@ -26,7 +26,7 @@ jobs:
       run: pyinstaller --onefile --windowed main.py
 
     - name: Upload the build artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: app
         path: dist/*
